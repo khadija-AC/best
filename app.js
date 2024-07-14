@@ -1,19 +1,20 @@
-var a = require("a.js")
+(function (exports) {
+  function khadija(n) {
+    return 1;
+  }
+  function greet(name) {
+    const a = 8;
 
-let array = ['bonjour', "khadija", "cv", 2.57];
+    const options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString("en-US", options);
+    return `Hello, ${name}! Today is ${formattedDate}.`;
+  }
 
-for (let i = 0; i < array.length; i++) {
- 
-
-
-
-
-
- var element = array[i];
-}
-
-function direBonjour(monnom) {
-  var age = 2;
-}
-
-const age = 12;
+  exports.greet = greet;
+})(this);
