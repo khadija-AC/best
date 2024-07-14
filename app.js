@@ -1,9 +1,17 @@
 (function (exports) {
   function khadija(n) {
-    return 1;
+    return 1
+
+
+    
   }
   function greet(name) {
-    const a = 8;
+    const a = 8
+
+
+
+
+
 
     const options = {
       weekday: "long",
